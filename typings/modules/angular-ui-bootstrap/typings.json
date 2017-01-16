@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/ccc65d990d7b785a2ab987026ea268686c08b356/angular-ui-bootstrap/index.d.ts",
+    "raw": "registry:dt/angular-ui-bootstrap#0.13.3+20161212233252",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/ccc65d990d7b785a2ab987026ea268686c08b356/angular-ui-bootstrap/index.d.ts"
+  }
+}

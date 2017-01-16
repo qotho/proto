@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "angular": "registry:dt/angular#1.5.0+20161212190028",
+    "angular-resource": "registry:dt/angular-resource#1.5.0+20161206185711",
+    "angular-ui-bootstrap": "registry:dt/angular-ui-bootstrap#0.13.3+20161212233252",
+    "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20161122230850",
+    "d3": "registry:dt/d3#4.4.0+20161206204056"
+  },
+  "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160726204056",
+    "jquery": "registry:dt/jquery#1.10.0+20161119044246",
+    "jquery.cookie": "registry:dt/jquery.cookie#1.4.1+20160510010627",
+    "jquery.dynatree": "registry:dt/jquery.dynatree#1.2.5+20160510010627",
+    "knockout": "registry:dt/knockout#3.4.0+20161128184045",
+    "moment": "registry:dt/moment#2.11.1+20161010105546",
+    "openlayers": "registry:dt/openlayers#3.18.2+20161212190028",
+    "underscore": "registry:dt/underscore#1.8.3+20161123125004"
+  }
+}
