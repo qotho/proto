@@ -1,0 +1,19 @@
+<section data-ng-controller="ArticlesController" data-ng-init="findOne()">
+	<h1>Article Comments</h1>
+	<form>
+		<table id="table" class="table table-striped">
+			<tr>
+				<th>Title</th>
+				<th>Created</th>
+				<th>Modified</th>
+				<th>Comment</th>
+			</tr>
+			<tr ng-repeat="comment in article.comments">
+				<td><small data-ng-bind="comment.title"></small></td>
+				<td><small data-ng-bind="comment.created | date:'medium'"></small></td>
+				<td><small data-ng-bind="comment.modified | date:'medium'"></small></td>
+				<td><small data-ng-bind="comment.body"></small></td>
+			</tr>
+		</table>
+	</form>
+</section>
