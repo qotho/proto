@@ -11,12 +11,14 @@ angular.module('articles').controller('ArticlesController', [
         vm.selectAll = false;
         vm.toggleAll = toggleAll;
         vm.toggleOne = toggleOne;        
-        vm.dtOptions = DTOptionsBuilder.newOptions().withPaginationType('full_numbers');
+        vm.dtOptions = DTOptionsBuilder.newOptions()
+            .withOption('order', [[1, 'asc']])
+            .withPaginationType('full_numbers');
         vm.dtColumnDefs = [
             DTColumnDefBuilder.newColumnDef(0).notSortable(),
             DTColumnDefBuilder.newColumnDef(1),
             DTColumnDefBuilder.newColumnDef(2),
-            DTColumnDefBuilder.newColumnDef(3)
+            DTColumnDefBuilder.newColumnDef(3).withOption('type', 'date')
         ];
 
         function toggleAll (selectAll, selectedItems) {

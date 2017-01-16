@@ -12,14 +12,17 @@
 			</ul>
 		</div>
 		<table ng-show="articles.length" id="table" class="table table-striped" datatable="ng" 
-			dt-options="ctrl.dtOptions" dt-columns="ctrl.dtColumns"	class="row-border hover">
-			<tbody>				
+			dt-options="ctrl.dtOptions" dt-column-defs="ctrl.dtColumnDefs" class="row-border hover">
+			<thead>
 				<tr>
-					<th><input type="checkbox" ng-model="ctrl.selectAll" ng-click="ctrl.toggleAll(ctrl.selectAll, ctrl.selected)"></th>
-					<th>#</th>
-					<th>First Name</th>
-					<th>Last Name</th>
+					<th style="padding-left: 18px"><input type="checkbox" ng-model="ctrl.selectAll" 
+						ng-click="ctrl.toggleAll(ctrl.selectAll, ctrl.selected)"></th>
+					<th>Title</th>
+					<th>Creator</th>
+					<th>Created</th>
 				</tr>
+			</thead>				
+			<tbody>				
 				<tr ng-repeat="article in articles">
 					<td>
 						<input type="checkbox" ng-model="ctrl.selected[article._id]" ng-click="ctrl.toggleOne(ctrl.selected)">
@@ -28,7 +31,7 @@
 						<a data-ng-href="#!/articles/{{article._id}}" data-ng-bind="article.title"></a>
 					</td>
 					<td><small data-ng-bind="article.creator.fullName"></small></td>
-					<td><small data-ng-bind="article.created | date:'medium'"></small></td>
+					<td><small data-ng-bind="article.created | date:'yyyy-MM-dd HH:mm:ss'"></small></td>
 				</tr>
 			</tbody>
 		</table>
